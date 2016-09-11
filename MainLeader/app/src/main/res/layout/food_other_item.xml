@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/foodListImg"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@mipmap/user_info_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_alignBaseline="@id/foodListImg"
+        android:layout_toRightOf="@id/foodListImg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="黄豆猪脚汤"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/describeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="煮开焯去血沫，再洗净备用3，锅中放入猪脚，黄豆，姜片和料酒加入足够的清水，大火煮开4，关小火炖一个半到两个小时，出锅前加盐调味即可" />
+
+        <TextView
+            android:id="@+id/foodTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="猪脚,黄豆,料酒"
+            android:textSize="10sp"
+            android:textColor="@color/grey_big"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

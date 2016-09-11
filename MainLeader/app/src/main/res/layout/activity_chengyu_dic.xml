@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/white"
+    tools:context="com.example.activity.ChengyuDicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_view_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchEdt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5"
+                android:background="@null"
+                android:hint="四字成语，如：龙飞凤舞"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColorHint="@color/grey_big" />
+
+            <ImageView
+                android:id="@+id/searchImg"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/search"
+                android:text="搜索" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wordOne"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/word_bg"
+                android:gravity="center"
+                android:text="龙"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/wordTwo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/word_bg"
+                android:gravity="center"
+                android:text="飞"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/wordThree"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/word_bg"
+                android:gravity="center"
+                android:text="凤"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/wordFour"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/word_bg"
+                android:gravity="center"
+                android:text="舞"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="拼音 : "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pinYinTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="[ lóng fēi fèng wǔ ]"
+                android:textColor="@color/purple"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="语法 : "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/yufaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="联合式；作谓语、宾语、定语；形容书法笔势有力"
+                android:textColor="@color/purple"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="同义词 : "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.example.customview.MyGridView
+                android:id="@+id/synonymGv"
+                android:numColumns="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="反义词 : "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.example.customview.MyGridView
+                android:id="@+id/antonymGv"
+                android:numColumns="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="成语解释"
+            android:textColor="@color/grey_big" />
+
+        <TextView
+            android:id="@+id/cyExplainTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="原形容山势的蜿蜒雄壮，后也形容书法笔势有力，灵活舒展。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="引证解释"
+            android:textColor="@color/grey_big" />
+
+        <TextView
+            android:id="@+id/yzExplainTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="1.形容气势奔放雄壮或姿态生动活泼。 周中孚 《郑堂札记》卷二引 晋 郭璞 《临安志》：“ 天目山 前两乳长，龙飞凤舞到 钱唐 。” 宋 苏轼 《表忠观碑》：“ 天目 之山， 苕水 出焉，龙飞凤舞，萃於 临安 。” 秦牧 《艺海拾贝·菊花与金鱼》：“它们有的端雅大方，有的龙飞凤舞。” 清 蒋士铨 《冬青树·西台》：“事去时移，甚龙飞凤舞，尚存王气。" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_bg"
+                android:padding="5dp"
+                android:text="出处"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/fromTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="汉·张衡《东京赋》：“我世祖龙飞白水，凤翔参墟。”宋·苏轼《表忠观碑》：“天目之山，苕水出焉，龙飞凤舞，萃于临安。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_bg"
+                android:padding="5dp"
+                android:text="例句"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/exampleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="抬头看见北墙上挂着四幅大屏，草书得～，出色惊人。 清·刘鹗《老残游记》第九回" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

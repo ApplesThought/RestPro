@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.activity.CheckInWriteActivity">
+
+    <EditText
+        android:id="@+id/contentEdt"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:padding="6dp"
+        android:background="@null"
+        android:textSize="15dp"
+        android:hint="想说点什么呢..."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <ImageView
+        android:id="@+id/img_checkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:maxHeight="300dp"
+        android:maxWidth="400dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"/>
+</LinearLayout>

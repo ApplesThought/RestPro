@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/isRuningTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在进行"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/isRuningTxt"
+            android:singleLine="true"
+            android:text="谁的卡丢卡丢了"
+            android:textStyle="bold"
+            style="@style/Common_Text"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/describeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="谁的东西丢了，红色的"
+        android:singleLine="true"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="2016-06-20"
+            android:layout_centerVertical="true"
+            android:textSize="10sp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/orange"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5sp"
+                android:src="@drawable/phone"/>
+
+            <TextView
+                android:id="@+id/phoneTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3sp"
+                android:text="15371853088"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

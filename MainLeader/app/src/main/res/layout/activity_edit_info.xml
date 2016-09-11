@@ -1,0 +1,267 @@
+<com.example.customview.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never"
+    tools:context="com.example.fragment.MainPageInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/grey" />
+
+        <!--登录名-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="登录名"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/loginNameTxt"
+                style="@style/Common_Text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <!--昵称-->
+        <LinearLayout
+            android:id="@+id/ll_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="昵称"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/nickNameEdt"
+                style="@style/Common_Text"
+                android:background="@null"
+                android:hint="你的昵称"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <!--性别-->
+        <LinearLayout
+            android:id="@+id/ll_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/genderTxt"
+                style="@style/Common_Text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableRight="@mipmap/second_home_more"
+                android:paddingLeft="20dp"
+                android:text="男" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <!--所在地-->
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="所在地" />
+
+            <TextView
+                android:id="@+id/addressTxt"
+                style="@style/Common_Text"
+                android:layout_width="match_parent"
+                android:drawableRight="@mipmap/second_home_more"
+                android:layout_height="48dp"
+                android:paddingLeft="20dp"
+                android:text="江西九江" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+
+        <!--简介-->
+        <LinearLayout
+            android:id="@+id/ll_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="简介" />
+
+            <EditText
+                android:id="@+id/introEdt"
+                style="@style/Common_Text"
+                android:background="@null"
+                android:hint="你的简介"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/grey" />
+
+
+        <!--生日-->
+        <LinearLayout
+            android:id="@+id/ll_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="生日" />
+
+            <TextView
+                android:id="@+id/birthdayTxt"
+                style="@style/Common_Text"
+                android:drawableRight="@mipmap/second_home_more"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLines="5"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+
+        <!--邮箱-->
+        <LinearLayout
+            android:id="@+id/ll_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="邮箱" />
+
+            <EditText
+                android:id="@+id/mailEdt"
+                style="@style/Common_Text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="你的邮箱"
+                android:digits="1234567890abcedfghijklmnopqrstuvwxyz@."
+                android:background="@null"
+                android:maxLines="5"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+
+        <!--QQ-->
+        <LinearLayout
+            android:id="@+id/ll_QQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                style="@style/Common_Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="QQ" />
+
+            <EditText
+                android:id="@+id/QQEdt"
+                style="@style/Common_Text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="你的QQ"
+                android:inputType="number"
+                android:maxLength="11"
+                android:background="@null"
+                android:maxLines="5"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+    </LinearLayout>
+</com.example.customview.MyScrollView>

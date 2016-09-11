@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.activity.AddLostOrFoundActivity">
+
+    <EditText
+        android:id="@+id/titleEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/addressEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="详细地址"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/contactsEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="联系人称呼"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/phoneEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="联系人电话"
+        android:textSize="12dp"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/QQEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="联系人QQ"
+        android:singleLine="true"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textSize="12dp"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/thankEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="报酬"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/describeEdt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="物品描述"
+        android:gravity="top"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:background="@null"/>
+</LinearLayout>

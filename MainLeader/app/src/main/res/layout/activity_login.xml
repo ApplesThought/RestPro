@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    tools:context="com.hcc.activity.LoginActivity">
+
+    <!--头像-->
+    <com.example.customview.CircleTextImageView
+        android:id="@+id/login_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/health_guide_men_selected"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true">
+    </com.example.customview.CircleTextImageView>
+
+    <!--用户名和密码输入框-->
+    <LinearLayout
+        android:id="@+id/name_pwd_Linear"
+        android:layout_below="@id/login_head"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--用户名输入框-->
+        <LinearLayout
+            android:id="@+id/usernameLinear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon02"/>
+
+            <EditText
+                android:id="@+id/loginNameEdt"
+                style="@style/Common_Text"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLength="20"
+                android:layout_marginLeft="15dp"
+                android:digits="1234567890abcedfghijklmnopqrstuvwxyz@."
+                android:drawablePadding="20dp"
+                android:hint="手机号/邮箱"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!--中间分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8E8E8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <!--密码输入框-->
+        <RelativeLayout
+            android:id="@+id/passwordLinear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/iv_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/icon03"/>
+
+            <TextView
+                android:id="@+id/forgetPwdTxt"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:textColor="#589DF6"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="忘记密码"/>
+
+            <EditText
+                android:id="@+id/loginPwdEdt"
+                style="@style/Common_Text"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLength="20"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/forgetPwdTxt"
+                android:layout_toRightOf="@id/iv_passwd"
+                android:layout_marginLeft="15dp"
+                android:digits="1234567890abcedfghijklmnopqrstuvwxyz@."
+                android:drawablePadding="20dp"
+                android:hint="请输入密码"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_below="@id/name_pwd_Linear"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/loginselector"/>
+
+    <TextView
+        android:id="@+id/noPwdLoginTxt"
+        android:layout_below="@id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#589DF6"
+        android:layout_centerHorizontal="true"
+        android:text="无密码登录"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/registerTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#589DF6"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="注册账号"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="#589DF6"/>
+
+        <TextView
+            android:id="@+id/loginInQQTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#589DF6"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="QQ登录"/>
+    </LinearLayout>
+</RelativeLayout>

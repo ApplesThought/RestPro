@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E7E7E7"/>
+    <RelativeLayout
+        android:id="@+id/rel_toInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.customview.CircleTextImageView
+            android:id="@+id/img_friend_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/health_guide_men_selected"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_friend_photo">
+
+            <TextView
+                android:id="@+id/friend_nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@color/orange_big"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="发布者名称"/>
+            <TextView
+                android:id="@+id/friend_dateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@color/orange"
+                android:textSize="10sp"
+                android:gravity="center_vertical"
+                android:text="发布日期"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contentTxt"
+        style="@style/Common_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="20"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#E7E7E7"/>
+
+    <ImageView
+        android:id="@+id/moodImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:maxHeight="300dp"
+        android:maxWidth="450dp"
+        android:visibility="gone"
+        android:background="@mipmap/img_unload"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lookTimesTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="浏览10次"
+            android:padding="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看详情"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/second_home_more"
+            android:gravity="center_vertical|end"
+            style="@style/Common_Text"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#E7E7E7"/>
+</LinearLayout>

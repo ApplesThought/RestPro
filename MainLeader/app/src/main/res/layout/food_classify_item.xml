@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.example.customview.CircleTextImageView
+        android:id="@+id/foodImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        app:citv_text_size="30sp"
+        app:citv_border_color="@color/white"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/foodImg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="减肥"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/describeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="减肥"
+            android:textSize="10sp"
+            android:textColor="@color/grey_big"/>
+    </LinearLayout>
+
+</RelativeLayout>

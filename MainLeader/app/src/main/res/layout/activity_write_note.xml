@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.activity.WriteNoteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.customview.CircleTextImageView
+            android:id="@+id/imgType"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:citv_text_text="类"
+            app:citv_text_size="18sp"
+            app:citv_border_color="@color/grey"
+            android:src="@mipmap/notetype"/>
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:paddingLeft="5dp"
+            android:hint="标题"
+            android:layout_toLeftOf="@id/imgType"
+            android:background="@drawable/edittext_bg"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="3dp"
+        android:gravity="top"
+        android:paddingLeft="5dp"
+        android:hint="写点什么..."
+        android:background="@drawable/edittext_bg"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/loginselector"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.activity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:label">
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyInfoActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuideActivity" />
+        <activity android:name=".NoPwdLoginActivity" />
+        <activity
+            android:name=".FriendStatusActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".PublishTalkActivity" />
+        <activity android:name=".ISaidActivity" />
+        <activity android:name=".TalkDetailActivity" />
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".OthersInfoActivity" />
+        <activity android:name=".ReadNoteActivity" />
+        <activity android:name=".WriteNoteActivity" />
+        <activity android:name=".NoteDetailActivity" />
+        <activity android:name=".LaughActivity" />
+        <activity android:name=".ArticleClassActivity" />
+        <activity
+            android:name=".ArticleActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".EditArticleActivity" />
+        <activity android:name=".AllPeopleActivity" />
+        <activity android:name=".PeopleInfoActivity" />
+        <activity android:name=".EditInfoActivity" />
+        <activity android:name=".MoodDetailActivity" />
+        <activity
+            android:name=".BigImgActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".CheckInActivity" />
+        <activity android:name=".CheckInWriteActivity" />
+        <activity android:name=".LostAndFoundActivity" />
+        <activity android:name=".AddLostOrFoundActivity" />
+        <activity android:name=".MyLostAndFoundActivity" />
+        <activity android:name=".LostAndFoundDetailActivity" />
+        <activity android:name=".PersonalInfoActivity" />
+        <activity android:name=".InfoCardActivity" />
+        <activity android:name=".TieZiActivity" />
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoToolBar" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".AllFuncActivity" />
+        <activity android:name=".HealthFoodClassifyActivity" />
+        <activity android:name=".ChengyuDicActivity" />
+        <activity android:name=".XingzuoActivity" />
+        <activity android:name=".FoodListActivity" />
+        <activity
+            android:name=".FoodDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".OtherFoodListActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".FLPhotoActivity" />
+        <activity android:name=".PhotoDetailActivity" />
+        <activity
+            android:name=".PhotoBigActivity"
+            android:theme="@style/AppFullScreenTheme"></activity>
+    </application>
+
+</manifest>

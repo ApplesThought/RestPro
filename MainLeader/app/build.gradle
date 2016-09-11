@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.example.mainleader"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //    compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
+    //CDN文件服务使用okhttp相关包进行文件的上传和下载（必填）
+    compile files('libs/BmobSDK_V3.4.5_1111.jar')
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.cleveroad:slidingtutorial:0.9.4'
+    compile 'com.android.support:percent:23.2.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.4.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/MobCommons-2016.0406.1915.jar')
+    compile project(':PullToRefreshLibrary')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    /*图片轮播*/
+    compile 'com.youth.banner:banner:1.1.9'
+    /*读书笔记的TabLayout*/
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    /*ListView的阻尼效果*/
+    compile 'com.dodola:listviewext:1.0'
+    compile project(':SweetAlertLibrary')
+    compile project(':volleyplus')
+    /*开源WebView库*/
+    compile 'com.thefinestartist:finestwebview:1.1.2'
+}

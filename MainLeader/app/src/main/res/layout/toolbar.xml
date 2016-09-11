@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <!--返回-->
+            <TextView
+                android:id="@+id/backText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/backup"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--ToolBar Title-->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_lostAndFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/lostTxt"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/left_select_lost"
+                    android:gravity="center"
+                    android:text="Lost"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@+id/foundTxt"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/right_unselect_found"
+                    android:gravity="center"
+                    android:text="Found" />
+            </LinearLayout>
+
+
+            <!--编辑-->
+            <ImageView
+                android:id="@+id/addImg"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@mipmap/ab_icon_edit"
+                android:visibility="gone" />
+
+            <!--确定-->
+            <ImageView
+                android:id="@+id/comfirmImg"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/ok"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <!--确定-->
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/refresh"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

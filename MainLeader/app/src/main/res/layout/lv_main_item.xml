@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_light"/>
+    <RelativeLayout
+        android:id="@+id/rel_toInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.customview.CircleTextImageView
+            android:id="@+id/img_main_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/health_guide_men_selected"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_main_photo">
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@color/orange_big"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text=""/>
+            <TextView
+                android:id="@+id/publish_date"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@color/orange"
+                android:textSize="10sp"
+                android:gravity="center_vertical"
+                android:text=""/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addAttention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:drawableTop="@mipmap/card_icon_addattention"
+            android:text="加关注" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/talkTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:text="标题"/>
+
+    <TextView
+        android:id="@+id/contentTxt"
+        style="@style/Common_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="8"
+        android:text=""/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#E7E7E7"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_bg"
+            android:padding="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看详情"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/second_home_more"
+            android:gravity="center_vertical|end"
+            style="@style/Common_Text"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#E7E7E7"/>
+</LinearLayout>
