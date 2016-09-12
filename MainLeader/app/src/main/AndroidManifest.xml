@@ -93,7 +93,8 @@
         <activity android:name=".PhotoDetailActivity" />
         <activity
             android:name=".PhotoBigActivity"
-            android:theme="@style/AppFullScreenTheme"></activity>
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name=".HistoryTodayActivity"></activity>
     </application>
 
 </manifest>

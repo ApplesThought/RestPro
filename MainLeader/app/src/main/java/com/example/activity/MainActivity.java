@@ -30,6 +30,7 @@ import com.example.fragment.FindFragment;
 import com.example.fragment.HomeFragment;
 import com.example.fragment.MessFragment;
 import com.example.fragment.MineFragment;
+import com.example.utils.IntentUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -233,7 +234,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
+            IntentUtils.toGoalAcrivity(this, FLPhotoActivity.class);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "F:\\Android\\android_Install\\workspace\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+        "outputFile": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "F:\\Android\\android_Install\\workspace\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-xlarge-land\\values.xml",
+                    "file": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-xlarge-land\\values.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

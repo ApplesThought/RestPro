@@ -46,6 +46,7 @@ public class AllFuncActivity extends KLBaseActivity {
                         break;
                     case 4://健康菜谱
                         IntentUtils.toGoalAcrivity(view.getContext(), HealthFoodClassifyActivity.class);
+                        overridePendingTransition(R.anim.slide_bottom_in, android.R.anim.fade_out);
                         break;
                     case 5://福利图区
                         IntentUtils.toGoalAcrivity(view.getContext(), FLPhotoActivity.class);
@@ -60,6 +61,7 @@ public class AllFuncActivity extends KLBaseActivity {
                     case 9://周公解梦
                         break;
                     case 10://历史上的今天
+                        IntentUtils.toGoalAcrivity(view.getContext(), HistoryTodayActivity.class);
                         break;
                     case 11://星座运势
                         IntentUtils.toGoalAcrivity(view.getContext(), XingzuoActivity.class);

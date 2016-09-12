@@ -1,18 +1,18 @@
 [
     {
-        "merged": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_top.xml",
-        "source": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_out_to_top.xml"
+        "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_top.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_in_from_top.xml"
     },
     {
-        "merged": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_bottom.xml",
-        "source": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_in_from_bottom.xml"
+        "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_bottom.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_out_to_bottom.xml"
     },
     {
-        "merged": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_bottom.xml",
-        "source": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_out_to_bottom.xml"
+        "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_top.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_out_to_top.xml"
     },
     {
-        "merged": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_top.xml",
-        "source": "F:\\Android\\android_Install\\workspace\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_in_from_top.xml"
+        "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_bottom.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\anim\\slide_in_from_bottom.xml"
     }
 ]

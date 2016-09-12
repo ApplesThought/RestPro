@@ -9,7 +9,7 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="画廊" />
+            android:title="福利区" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
@@ -17,7 +17,7 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="工具" />
+            android:title="设置" />
     </group>
 
     <item android:title="社区">

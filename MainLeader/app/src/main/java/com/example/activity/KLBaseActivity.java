@@ -128,7 +128,7 @@ public class KLBaseActivity extends AppCompatActivity {
     }
 
     /*返回监听事件*/
-    private void clickBack() {
+    public void clickBack() {
         backText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

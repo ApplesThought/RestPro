@@ -42,6 +42,7 @@ public class SPManager {
     public static String KEY_HOME_HEALTH = "home_health";
     public static String KEY_HOME_SHUMA = "home_shuma";
     public static String KEY_HOME_KEPU = "home_kepu";
+    public static String KEY_FOOD_CLASSIFY = "food_classify";//菜谱分类
 
     public static SPManager getInstance() {
         if (SharedPreferencesManager == null) {
