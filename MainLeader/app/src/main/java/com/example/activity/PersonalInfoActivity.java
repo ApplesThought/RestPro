@@ -35,6 +35,7 @@ import com.example.fragment.ArticleInfoFragment;
 import com.example.fragment.LaughInfoFragment;
 import com.example.fragment.NoteInfoFragment;
 import com.example.fragment.TalkInfoFragment;
+import com.example.manager.SPManager;
 import com.example.utils.BlurTransformation;
 import com.example.utils.IntentUtils;
 import com.example.utils.SDCardUtils;
@@ -169,60 +170,100 @@ public class PersonalInfoActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        MyUser user = BmobUser.getCurrentUser(this, MyUser.class);
-        String objectId = user.getObjectId();
-        BmobQuery<MyUser> query = new BmobQuery<>();
-        query.addWhereEqualTo("objectId", objectId);
-        query.findObjects(this, new FindListener<MyUser>() {
-            @Override
-            public void onSuccess(List<MyUser> list) {
-                String nick = "", signal = "", name = "", gender = "",photoStr = "";
-                for (MyUser u : list) {
-                    nick = u.getNick();
-                    signal = u.getSignal();
-                    name = u.getUsername();
-                    photoStr = u.getUserPhoto();
-                }
+        String nick = SPManager.getInstance().getUserString(this, SPManager.USER_ACCOUNT, SPManager.KEY_USER_NICK);
+        String name = SPManager.getInstance().getUserString(this, SPManager.USER_ACCOUNT, SPManager.KEY_USER_NAME);
+        String signal = SPManager.getInstance().getUserString(this, SPManager.USER_ACCOUNT, SPManager.KEY_USER_SIGNAL);
+        String photo = SPManager.getInstance().getUserString(this, SPManager.USER_ACCOUNT, SPManager.KEY_USER_PHOTO);
+
+        if (nick.isEmpty()) {
+            MyUser user = BmobUser.getCurrentUser(this, MyUser.class);
+            String objectId = user.getObjectId();
+            BmobQuery<MyUser> query = new BmobQuery<>();
+            query.addWhereEqualTo("objectId", objectId);
+            query.findObjects(this, new FindListener<MyUser>() {
+                @Override
+                public void onSuccess(List<MyUser> list) {
+                    String nick = "", signal = "", name = "", gender = "", photoStr = "";
+                    for (MyUser u : list) {
+                        nick = u.getNick();
+                        signal = u.getSignal();
+                        name = u.getUsername();
+                        photoStr = u.getUserPhoto();
+                    }
 //                if (TextUtils.isEmpty(nick)) {
                     txt_info_name.setText(name);
 //                } else {
                     txt_info_nick.setText(nick);
 //                }
-                if (TextUtils.isEmpty(signal)) {
-                    txt_info_intro.setText("暂无介绍");
-                } else {
-                    txt_info_intro.setText(signal);
-                }
+                    if (TextUtils.isEmpty(signal)) {
+                        txt_info_intro.setText("暂无介绍");
+                    } else {
+                        txt_info_intro.setText(signal);
+                    }
 
                 /*加载头像*/
-                if (TextUtils.isEmpty(photoStr)) {
-                    img_info_photo.setImageResource(R.drawable.health_guide_men_selected);
-                } else {
-                    Picasso.with(PersonalInfoActivity.this).load(photoStr).into(img_info_photo);
-                }
+                    if (TextUtils.isEmpty(photoStr)) {
+                        img_info_photo.setImageResource(R.drawable.health_guide_men_selected);
+                    } else {
+                        Picasso.with(PersonalInfoActivity.this).load(photoStr).into(img_info_photo);
+                    }
 
                 /*设置毛玻璃效果*/
-                loadBlurAndSetStatusBar(photoStr);
+                    loadBlurAndSetStatusBar(photoStr);
 
                 /*设置ToolBar的名字*/
-                final String finalNick = nick;
-                app_bar_layout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-                    @Override
-                    public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                        if (verticalOffset <= -head_layout.getHeight() / 2) {
-                            mCollapsingToolbarLayout.setTitle(finalNick);
-                        } else {
-                            mCollapsingToolbarLayout.setTitle(" ");
+                    final String finalNick = nick;
+                    app_bar_layout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+                        @Override
+                        public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                            if (verticalOffset <= -head_layout.getHeight() / 2) {
+                                mCollapsingToolbarLayout.setTitle(finalNick);
+                            } else {
+                                mCollapsingToolbarLayout.setTitle(" ");
+                            }
                         }
-                    }
-                });
+                    });
+                }
+
+                @Override
+                public void onError(int i, String s) {
+                    ToastUtils.showToast(PersonalInfoActivity.this, "信息获取失败");
+                }
+            });
+        } else {
+            if (TextUtils.isEmpty(nick)) {
+                txt_info_name.setText(name);
+                txt_info_nick.setText(nick);
+            }
+            if (TextUtils.isEmpty(signal)) {
+                txt_info_intro.setText("暂无介绍");
+            } else {
+                txt_info_intro.setText(signal);
             }
 
-            @Override
-            public void onError(int i, String s) {
-                ToastUtils.showToast(PersonalInfoActivity.this, "信息获取失败");
+                /*加载头像*/
+            if (TextUtils.isEmpty(photo)) {
+                img_info_photo.setImageResource(R.drawable.health_guide_men_selected);
+            } else {
+                Picasso.with(PersonalInfoActivity.this).load(photo).into(img_info_photo);
             }
-        });
+
+                /*设置毛玻璃效果*/
+            loadBlurAndSetStatusBar(photo);
+
+                /*设置ToolBar的名字*/
+            final String finalNick = nick;
+            app_bar_layout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+                @Override
+                public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                    if (verticalOffset <= -head_layout.getHeight() / 2) {
+                        mCollapsingToolbarLayout.setTitle(finalNick);
+                    } else {
+                        mCollapsingToolbarLayout.setTitle(" ");
+                    }
+                }
+            });
+        }
     }
 
     private void initEvent() {
@@ -267,7 +308,6 @@ public class PersonalInfoActivity extends AppCompatActivity {
                     }
                 });
     }
-
 
 
     private void showSelectDialog() {
@@ -318,7 +358,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
 
 
     /*从相册选择*/
-    private void selectPhoto(){
+    private void selectPhoto() {
         outputImage = new File(Environment.getExternalStorageDirectory(), "output_image.jpg");
         try {
             if (outputImage.exists()) {
@@ -381,7 +421,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
                                             public void onSuccess() {
                                                 img_info_photo.setImageBitmap(finalBitmap);
                                                 loadBlurAndSetStatusBar(url);
-                                                ToastUtils.showToast(PersonalInfoActivity.this,"头像上传成功");
+                                                ToastUtils.showToast(PersonalInfoActivity.this, "头像上传成功");
                                             }
 
                                             @Override
@@ -391,6 +431,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
                                         });
                                     }
                                 }
+
                                 @Override
                                 public void onProgress(Integer value) {
                                     // 返回的上传进度（百分比）

@@ -46,7 +46,7 @@ public class AllFuncActivity extends KLBaseActivity {
                         break;
                     case 4://健康菜谱
                         IntentUtils.toGoalAcrivity(view.getContext(), HealthFoodClassifyActivity.class);
-                        overridePendingTransition(R.anim.slide_bottom_in, android.R.anim.fade_out);
+                        overridePendingTransition(R.anim.slide_bottom_in, R.anim.slide_bottom_out);
                         break;
                     case 5://福利图区
                         IntentUtils.toGoalAcrivity(view.getContext(), FLPhotoActivity.class);

@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.activity.AllPeopleActivity;
 import com.example.activity.FriendStatusActivity;
 import com.example.activity.ISaidActivity;
@@ -22,6 +23,7 @@ import com.example.activity.R;
 import com.example.adapter.MineGridViewAdapter;
 import com.example.customview.CircleTextImageView;
 import com.example.entity.MyUser;
+import com.example.manager.SPManager;
 import com.example.utils.IntentUtils;
 import com.example.utils.ToastUtils;
 import com.squareup.picasso.Picasso;
@@ -137,43 +139,70 @@ public class MineFragment extends Fragment {
     }
 
     private void initData() {
-        MyUser user = BmobUser.getCurrentUser(getActivity(), MyUser.class);
-        String objectId = user.getObjectId();
-        BmobQuery<MyUser> query = new BmobQuery<>();
-        query.addWhereEqualTo("objectId", objectId);
-        query.findObjects(getActivity(), new FindListener<MyUser>() {
-            @Override
-            public void onSuccess(List<MyUser> list) {
-                String nick = "", signal = "",name = "",photoStr = "";
-                for (MyUser u : list) {
-                    nick = u.getNick();
-                    signal = u.getSignal();
-                    name = u.getUsername();
-                    photoStr = u.getUserPhoto();
-                }
-                if (TextUtils.isEmpty(nick)) {
-                    loginName.setText(name);
-                } else {
-                    loginName.setText(nick);
-                }
-                if (TextUtils.isEmpty(signal)) {
-                    introTxt.setText("简介:暂无介绍");
-                } else {
-                    introTxt.setText("简介:" + signal);
+        String nick = SPManager.getInstance().getUserString(getContext(), SPManager.USER_ACCOUNT, SPManager.KEY_USER_NICK);
+        String name = SPManager.getInstance().getUserString(getContext(), SPManager.USER_ACCOUNT, SPManager.KEY_USER_NAME);
+        String signal = SPManager.getInstance().getUserString(getContext(), SPManager.USER_ACCOUNT, SPManager.KEY_USER_SIGNAL);
+        String photo = SPManager.getInstance().getUserString(getContext(), SPManager.USER_ACCOUNT, SPManager.KEY_USER_PHOTO);
+
+        if (nick.isEmpty()) {
+            final MyUser user = BmobUser.getCurrentUser(getActivity(), MyUser.class);
+            String objectId = user.getObjectId();
+            BmobQuery<MyUser> query = new BmobQuery<>();
+            query.addWhereEqualTo("objectId", objectId);
+            query.findObjects(getActivity(), new FindListener<MyUser>() {
+                @Override
+                public void onSuccess(List<MyUser> list) {
+                    SPManager.getInstance().saveMyUser(getContext(), user);
+                    String nick = "", signal = "", name = "", photoStr = "";
+                    for (MyUser u : list) {
+                        nick = u.getNick();
+                        signal = u.getSignal();
+                        name = u.getUsername();
+                        photoStr = u.getUserPhoto();
+                    }
+                    if (TextUtils.isEmpty(nick)) {
+                        loginName.setText(name);
+                    } else {
+                        loginName.setText(nick);
+                    }
+                    if (TextUtils.isEmpty(signal)) {
+                        introTxt.setText("简介:暂无介绍");
+                    } else {
+                        introTxt.setText("简介:" + signal);
+                    }
+
+                    if (TextUtils.isEmpty(photoStr)) {
+                        circleImg.setImageResource(R.drawable.health_guide_men_selected);
+                    } else {
+                        Picasso.with(getActivity()).load(photoStr).into(circleImg);
+                    }
                 }
 
-                if (TextUtils.isEmpty(photoStr)) {
-                    circleImg.setImageResource(R.drawable.health_guide_men_selected);
-                } else {
-                    Picasso.with(getActivity()).load(photoStr).into(circleImg);
+                @Override
+                public void onError(int i, String s) {
+                    ToastUtils.showToast(getActivity(), "信息获取失败");
                 }
+            });
+        } else {
+            if (TextUtils.isEmpty(nick)) {
+                loginName.setText(name);
+            } else {
+                loginName.setText(nick);
+            }
+            if (TextUtils.isEmpty(signal)) {
+                introTxt.setText("简介:暂无介绍");
+            } else {
+                introTxt.setText("简介:" + signal);
             }
 
-            @Override
-            public void onError(int i, String s) {
-                ToastUtils.showToast(getActivity(), "信息获取失败");
+            if (TextUtils.isEmpty(photo)) {
+                circleImg.setImageResource(R.drawable.health_guide_men_selected);
+            } else {
+                Glide.with(getActivity()).load(photo).into(circleImg);
             }
-        });
+        }
+
+
     }
 
     @Override

@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.entity.MyUser;
+
 /**
  * Created by Administrator on 2016/7/27.
  */
@@ -11,6 +13,7 @@ public class SPManager {
     private static SPManager SharedPreferencesManager;
 
     private static final String USER_INFO = "USER_INFO";
+    public static final String USER_ACCOUNT = "USER_ACCOUNT";
 
     //key
     public static String KEY_PHONE = "phone";
@@ -43,6 +46,12 @@ public class SPManager {
     public static String KEY_HOME_SHUMA = "home_shuma";
     public static String KEY_HOME_KEPU = "home_kepu";
     public static String KEY_FOOD_CLASSIFY = "food_classify";//菜谱分类
+
+    /*登录成功保存用户信息*/
+    public static String KEY_USER_NAME = "user_name";//用户名
+    public static String KEY_USER_NICK = "user_nick";//备注
+    public static String KEY_USER_SIGNAL = "user_signal";//签名
+    public static String KEY_USER_PHOTO = "user_photo";//头像
 
     public static SPManager getInstance() {
         if (SharedPreferencesManager == null) {
@@ -109,20 +118,27 @@ public class SPManager {
         saveString(context, KEY_PROVINCE, province);
     }
 
-//    public void saveMyUser(Context context, MyUser myUser) {
-//        saveString(context, KEY_NAME, returnLoginInfo.getName());
-//        saveString(context, KEY_LOGO_URL, returnLoginInfo.getPhoto());
-//        saveString(context, KEY_ADDRESS, returnLoginInfo.getAddress());
-//        saveInt(context, KEY_DATE_AMOUNT, returnLoginInfo.getDate_amount());
-//        saveString(context, KEY_GENDER, returnLoginInfo.getGender());
-//        saveInt(context, KEY_GOLDCOIN, returnLoginInfo.getGoldcoin_amount());
-//        saveInt(context, KEY_USERID, returnLoginInfo.getUser_id());
-//        saveInt(context, KEY_LEVEL, returnLoginInfo.getLevel());
-//        saveInt(context, KEY_UN_MESSAGE, returnLoginInfo.getUn_message());
-//        saveInt(context, KEY_UN_ORDER, returnLoginInfo.getUn_order());
-//        saveInt(context, KEY_UN_COUPON, returnLoginInfo.getUn_coupon());
-//        saveInt(context, KEY_COMMENT_AMOUNT, returnLoginInfo.getComment_amount());
-//        saveBoolean(context, KEY_SHOW_FLOW, returnLoginInfo.isShow_flow());
-//    }
+
+    public void saveUserString(Context context, String file, String key, String value) {
+        boolean isSaved = false;
+        do {
+            SharedPreferences sharedPreferences = context.getSharedPreferences(file, Activity.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString(key, value);
+            isSaved = editor.commit();
+        } while (!isSaved);
+    }
+
+    public String getUserString(Context context, String file, String key) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(file, Activity.MODE_PRIVATE);
+        return sharedPreferences.getString(key, "");
+    }
+
+    public void saveMyUser(Context context, MyUser myUser) {
+        saveUserString(context, USER_ACCOUNT, KEY_USER_NAME, myUser.getUsername());
+        saveUserString(context, USER_ACCOUNT, KEY_USER_NICK, myUser.getNick());
+        saveUserString(context, USER_ACCOUNT, KEY_USER_SIGNAL, myUser.getSignal());
+        saveUserString(context, USER_ACCOUNT, KEY_USER_PHOTO, myUser.getUserPhoto());
+    }
 
 }
