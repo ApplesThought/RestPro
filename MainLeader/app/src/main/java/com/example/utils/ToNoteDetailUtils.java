@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.activity.NoteDetailActivity;
-import com.example.entity.ReadNote;
+import com.example.mvp.model.ReadNote;
+import com.example.view.activity.NoteDetailActivity;
 
 import java.util.List;
 

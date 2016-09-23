@@ -40,12 +40,12 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\drawable\\error_circle.xml"
     },
     {
-        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\error_center_x.xml",
-        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\drawable\\error_center_x.xml"
-    },
-    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\error_center_x.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\drawable\\error_center_x.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\success_circle.xml",

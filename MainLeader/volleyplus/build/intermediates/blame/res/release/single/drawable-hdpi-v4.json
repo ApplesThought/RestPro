@@ -140,12 +140,12 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-hdpi\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-hdpi\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-hdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\drawable-hdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",

@@ -4,7 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.example.entity.MyUser;
+import com.example.mvp.model.MyUser;
+
 
 /**
  * Created by Administrator on 2016/7/27.

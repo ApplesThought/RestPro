@@ -20,12 +20,12 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",

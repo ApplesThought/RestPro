@@ -3,7 +3,7 @@ package com.example.utils;
 import java.util.Map;
 
 /**
- * Created by Administrator on 2016/7/25.
+ * Created by hcc on 2016/7/25.
  */
 public class AppTool {
     public static String generateMapToString(String baseUrl, Map<String, Object> params) {

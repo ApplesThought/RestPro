@@ -1,8 +1,9 @@
 package com.example.service;
 
-import com.example.addressmodel.CityModel;
-import com.example.addressmodel.DistrictModel;
-import com.example.addressmodel.ProvinceModel;
+
+import com.example.address.addressmodel.CityModel;
+import com.example.address.addressmodel.DistrictModel;
+import com.example.address.addressmodel.ProvinceModel;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

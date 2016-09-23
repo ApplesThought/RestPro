@@ -132,12 +132,12 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\volleyplus\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
