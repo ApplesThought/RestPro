@@ -104,7 +104,7 @@ public class InfoCardActivity extends KLBaseActivity {
         String objectId = user.getObjectId();
         BmobQuery<MyUser> query = new BmobQuery<>();
         query.addWhereEqualTo("objectId",objectId);
-        query.findObjects(InfoCardActivity.this, new FindListener<MyUser>() {
+        query.findObjects(this, new FindListener<MyUser>() {
             @Override
             public void onSuccess(List<MyUser> list) {
                 String nick = "",signal = "",QQ = "",gender = "",address = "",
