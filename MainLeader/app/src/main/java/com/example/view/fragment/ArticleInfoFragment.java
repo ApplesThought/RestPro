@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.activity.R;
+import com.example.view.activity.R;
 import com.example.ccinterface.IAlertDialogListener;
 import com.example.ccinterface.MyItemClickListener;
 import com.example.mvp.model.Comment;
