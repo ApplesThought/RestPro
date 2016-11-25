@@ -4,40 +4,31 @@ package com.example.mvp.model;
  * Created by ${hcc} on 2016/08/05.
  */
 public class XiaoHuaInfo {
-    private String content;
-    private String hashId;
-    private String unixtime;
-    private String updatetime;
+    private String title;
+    private String text;
+    private String ct;
 
-    public String getContent() {
-        return content;
+    public String getCt() {
+        return ct;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setCt(String ct) {
+        this.ct = ct;
     }
 
-    public String getHashId() {
-        return hashId;
+    public String getTitle() {
+        return title;
     }
 
-    public void setHashId(String hashId) {
-        this.hashId = hashId;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getUnixtime() {
-        return unixtime;
+    public String getText() {
+        return text;
     }
 
-    public void setUnixtime(String unixtime) {
-        this.unixtime = unixtime;
-    }
-
-    public String getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(String updatetime) {
-        this.updatetime = updatetime;
+    public void setText(String text) {
+        this.text = text;
     }
 }

@@ -12,7 +12,7 @@
     android:fitsSystemWindows="true"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <com.example.customview.CircleTextImageView
+    <com.example.view.customview.CircleTextImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

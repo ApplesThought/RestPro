@@ -10,11 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.dodola.listview.extlib.ListViewExt;
-import com.example.activity.R;
 import com.example.mvp.model.MyUser;
 import com.example.mvp.model.ReadNote;
 import com.example.utils.SortComparator;
 import com.example.utils.ToNoteDetailUtils;
+import com.example.view.activity.R;
 import com.example.view.adapter.NoteLvAdapter;
 import com.example.view.customview.LoadingDialog;
 

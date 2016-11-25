@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <com.example.customview.CircleTextImageView
+        <com.example.view.customview.CircleTextImageView
             android:id="@+id/articlePhoto"
             android:layout_width="20dp"
             android:layout_height="20dp"

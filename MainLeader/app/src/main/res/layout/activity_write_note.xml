@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.example.customview.CircleTextImageView
+        <com.example.view.customview.CircleTextImageView
             android:id="@+id/imgType"
             android:layout_width="35dp"
             android:layout_height="40dp"

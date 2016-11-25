@@ -4,49 +4,31 @@ package com.example.mvp.model;
  * Created by ${hcc} on 2016/07/28.
  */
 public class QuTuInfo {
-    private String content;
-    private String hashId;
-    private String unixtime;
-    private String updatetime;
-    private String url;
+    private String title;
+    private String img;
+    private String ct;
 
-    public String getContent() {
-        return content;
+    public String getTitle() {
+        return title;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getHashId() {
-        return hashId;
+    public String getImg() {
+        return img;
     }
 
-    public void setHashId(String hashId) {
-        this.hashId = hashId;
+    public void setImg(String img) {
+        this.img = img;
     }
 
-    public String getUnixtime() {
-        return unixtime;
+    public String getCt() {
+        return ct;
     }
 
-    public void setUnixtime(String unixtime) {
-        this.unixtime = unixtime;
-    }
-
-    public String getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(String updatetime) {
-        this.updatetime = updatetime;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
+    public void setCt(String ct) {
+        this.ct = ct;
     }
 }

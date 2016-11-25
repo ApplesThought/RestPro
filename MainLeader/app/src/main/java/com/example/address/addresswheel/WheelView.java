@@ -33,8 +33,8 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
-import com.example.activity.R;
 import com.example.address.addresswheeladapter.WheelViewAdapter;
+import com.example.view.activity.R;
 
 import java.util.LinkedList;
 import java.util.List;

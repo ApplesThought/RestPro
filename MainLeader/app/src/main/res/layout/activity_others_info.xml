@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@color/orange"/>
-        <com.example.customview.CircleTextImageView
+        <com.example.view.customview.CircleTextImageView
             android:id="@+id/img_circle_photo"
             android:layout_width="100dp"
             android:layout_height="100dp"

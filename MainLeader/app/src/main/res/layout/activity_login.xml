@@ -7,14 +7,14 @@
     tools:context="com.hcc.activity.LoginActivity">
 
     <!--头像-->
-    <com.example.customview.CircleTextImageView
+    <com.example.view.customview.CircleTextImageView
         android:id="@+id/login_head"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/health_guide_men_selected"
         android:layout_marginTop="45dp"
         android:layout_centerHorizontal="true">
-    </com.example.customview.CircleTextImageView>
+    </com.example.view.customview.CircleTextImageView>
 
     <!--用户名和密码输入框-->
     <LinearLayout

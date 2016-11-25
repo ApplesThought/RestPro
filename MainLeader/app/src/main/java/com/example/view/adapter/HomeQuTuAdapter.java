@@ -51,12 +51,12 @@ public class HomeQuTuAdapter extends BaseAdapter {
         }
         viewHolder = (ViewHolder) convertView.getTag();
 
-        Glide.with(context).load(list.get(position).getUrl()).
+        Glide.with(context).load(list.get(position).getImg()).
                 placeholder(R.mipmap.img_loading)
                 .error(R.mipmap.img_error).
                 into(viewHolder.img);
-        viewHolder.title.setText(list.get(position).getContent());
-        viewHolder.time.setText(list.get(position).getUpdatetime());
+        viewHolder.title.setText(list.get(position).getTitle());
+        viewHolder.time.setText(list.get(position).getCt());
         return convertView;
     }
 
