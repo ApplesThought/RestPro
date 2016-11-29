@@ -1,7 +1,15 @@
 [
     {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_search_url_text.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_search_url_text.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
@@ -10,6 +18,18 @@
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_dark.xml",
@@ -32,7 +52,23 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\color\\abc_primary_text_material_dark.xml"
     }
 ]

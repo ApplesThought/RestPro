@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.view.activity.R;
 import com.example.ccinterface.IAlertDialogListener;
 import com.example.ccinterface.MyItemClickListener;
 import com.example.mvp.model.Comment;
@@ -20,6 +19,7 @@ import com.example.mvp.model.MyUser;
 import com.example.mvp.model.Post;
 import com.example.utils.SortComparator;
 import com.example.utils.ToastUtils;
+import com.example.view.activity.R;
 import com.example.view.activity.TalkDetailActivity;
 import com.example.view.adapter.ArticleRecyclerAdapter;
 import com.example.view.customview.CustomDialog;

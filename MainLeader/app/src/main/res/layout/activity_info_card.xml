@@ -14,7 +14,7 @@
         android:textColor="@color/white"
         android:textSize="20dp" />
 
-    <com.example.customview.MyScrollView
+    <com.example.view.customview.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/editBtn"
@@ -324,5 +324,5 @@
                     android:paddingLeft="20dp" />
             </LinearLayout>
         </LinearLayout>
-    </com.example.customview.MyScrollView>
+    </com.example.view.customview.MyScrollView>
 </RelativeLayout>

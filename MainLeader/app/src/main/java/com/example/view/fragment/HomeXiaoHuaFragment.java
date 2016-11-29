@@ -32,8 +32,7 @@ public class HomeXiaoHuaFragment extends Fragment implements PullToRefreshBase.O
     private PullToRefreshListView lv;
     private HomeXiaoHuaAdapter adapter;
     private List<XiaoHuaInfo> list = new ArrayList<>();
-//    private MySwipeRefreshLayout swipe;
-    private int page = 2;
+    private String page = "2";
     private ListView listView;
     private int PULL_DOWN_FLAG = 0;
 
@@ -59,15 +58,13 @@ public class HomeXiaoHuaFragment extends Fragment implements PullToRefreshBase.O
         lv.setOnRefreshListener(this);
         listView = lv.getRefreshableView();
         listView.addFooterView(footView);
-//        swipe = (MySwipeRefreshLayout) view.findViewById(R.id.swipe);
-//        swipe.setOnRefreshListener(this);
         getData();
     }
 
     private void getData() {
         String xiaohuaJson = SPManager.getInstance().getString(getActivity(), SPManager.KEY_HOME_XIAOHUA);
         if (TextUtils.isEmpty(xiaohuaJson)) {
-            getDataFromNet(1);
+            getDataFromNet("1");
         } else {
             getDataFromSDCard(xiaohuaJson);
         }
@@ -75,12 +72,10 @@ public class HomeXiaoHuaFragment extends Fragment implements PullToRefreshBase.O
     }
 
 
-    private void getDataFromNet(int p) {
+    private void getDataFromNet(String p) {
         Map<String, Object> params = new HashMap<>();
         params.put("page", p);
-        params.put("pagesize", 20);
-        params.put("key", AppUrl.xiaohuaAppKey);
-        RequestManager.getRequestManager().dealDataByGet(getActivity(), AppUrl.xiaohuaBaseUrl, params, new RequestListener() {
+        RequestManager.getRequestManager().dealDataByGetWithToken(getActivity(), AppUrl.xiaohuaBaseUrl, params, new RequestListener() {
             @Override
             public void dealDataSuccess(JSONObject jsonObject) {
                 if (lv.isRefreshing()) {
@@ -92,8 +87,8 @@ public class HomeXiaoHuaFragment extends Fragment implements PullToRefreshBase.O
                 }
                 String JsonStr = jsonObject.toString();
                 parseJsonData(JsonStr);
-                if (page == 2) {
-                    listView.setAdapter(adapter);
+                if (page.equals("2")) {
+//                    listView.setAdapter(adapter);
                     SPManager.getInstance().saveString(getActivity(), SPManager.KEY_HOME_XIAOHUA, JsonStr);
                 }
             }
@@ -115,13 +110,14 @@ public class HomeXiaoHuaFragment extends Fragment implements PullToRefreshBase.O
     private void parseJsonData(String jsonStr) {
         try {
             JSONObject object = new JSONObject(jsonStr);
-            JSONObject resultObj = object.optJSONObject("result");
-            JSONArray array = resultObj.optJSONArray("data");
+            JSONObject resultObj = object.optJSONObject("showapi_res_body");
+            JSONArray array = resultObj.optJSONArray("contentlist");
             for (int i = 0; i < array.length(); i++) {
                 XiaoHuaInfo info = new XiaoHuaInfo();
                 JSONObject obj = array.optJSONObject(i);
-                info.setUpdatetime(obj.optString("updatetime"));
-                info.setContent(obj.optString("content"));
+                info.setCt(obj.optString("ct"));
+                info.setTitle(obj.optString("title"));
+                info.setText(obj.optString("text"));
                 list.add(info);
             }
 
@@ -131,33 +127,16 @@ public class HomeXiaoHuaFragment extends Fragment implements PullToRefreshBase.O
         }
     }
 
-    /*@Override
-    public void onRefresh() {
-        getDataFromNet();
-        handler.sendEmptyMessageDelayed(10, 2000);
-    }
-
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            if (msg.what == 10) {
-                if (swipe.isRefreshing()) {
-                    swipe.setRefreshing(false);
-                }
-            }
-        }
-    };*/
-
     @Override
     public void onPullDownToRefresh(PullToRefreshBase refreshView) {
         PULL_DOWN_FLAG = 10;
-        getDataFromNet(1);
+        getDataFromNet("1");
     }
 
     @Override
     public void onPullUpToRefresh(PullToRefreshBase refreshView) {
         getDataFromNet(page);
-        page++;
+        int p = Integer.valueOf(page);
+        page = String.valueOf(p++);
     }
 }

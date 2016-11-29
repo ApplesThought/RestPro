@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable-xhdpi\\default_ptr_rotate.png"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
         "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable-xhdpi\\default_ptr_rotate.png"
     },
@@ -8,7 +12,15 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable-xhdpi\\default_ptr_flip.png"
     },
     {
+        "merged": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable-xhdpi\\indicator_arrow.png"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
         "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable-xhdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable-xhdpi\\default_ptr_flip.png"
     }
 ]

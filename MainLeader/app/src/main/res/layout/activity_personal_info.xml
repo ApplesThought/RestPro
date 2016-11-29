@@ -64,7 +64,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <com.example.customview.CircleTextImageView
+                    <com.example.view.customview.CircleTextImageView
                         android:id="@+id/img_info_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"

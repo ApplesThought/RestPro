@@ -19,7 +19,7 @@ public class HomeFragment extends Fragment {
     private ArrayList<Fragment> list;
     private final String[] mTitles = {
             "娱乐","电影","电视","游戏","国内",
-            "趣图", "笑话", "互联网" , "微信精选", "汽车",
+            "趣图", "笑话", "互联网" , "汽车",
             "房产","社会","理财","女人","美容护肤",
             "情感两性","健康养生","数码","科普", "国际",
             "体育","军事","科技","教育", "财经","电脑"};
@@ -70,7 +70,6 @@ public class HomeFragment extends Fragment {
         list.add(new HomeQuTuFragment());
         list.add(new HomeXiaoHuaFragment());
         list.add(new HomeNetFragment());
-        list.add(new HomeWeiXinFragment());
         list.add(new HomeCarFragment());
         list.add(new HomeHouseFragment());
         list.add(new HomeSheHuiFragment());

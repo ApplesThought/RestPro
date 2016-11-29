@@ -152,7 +152,7 @@
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
-            <com.example.customview.MyGridView
+            <com.example.view.customview.MyGridView
                 android:id="@+id/synonymGv"
                 android:numColumns="3"
                 android:layout_width="match_parent"
@@ -173,7 +173,7 @@
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
-            <com.example.customview.MyGridView
+            <com.example.view.customview.MyGridView
                 android:id="@+id/antonymGv"
                 android:numColumns="3"
                 android:layout_width="match_parent"

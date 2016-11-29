@@ -23,17 +23,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.example.addresswheel.WheelView
+        <com.example.address.addresswheel.WheelView
             android:id="@+id/province"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
-        <com.example.addresswheel.WheelView
+        <com.example.address.addresswheel.WheelView
             android:id="@+id/city"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
-        <com.example.addresswheel.WheelView
+        <com.example.address.addresswheel.WheelView
             android:id="@+id/district"
             android:layout_weight="1"
             android:layout_width="0dp"

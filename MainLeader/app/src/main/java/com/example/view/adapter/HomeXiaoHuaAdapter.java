@@ -49,18 +49,18 @@ public class HomeXiaoHuaAdapter extends BaseAdapter {
         }
         viewHolder = (ViewHolder) convertView.getTag();
 
-        viewHolder.tv.setText(list.get(position).getContent());
-        viewHolder.posTv.setText((position + 1) + "");
+        viewHolder.title.setText(list.get(position).getTitle());
+        viewHolder.text.setText(list.get(position).getText());
         return convertView;
     }
 
 
     private class ViewHolder {
-        private TextView tv, tvTime, posTv;
+        private TextView title, tvTime, text;
 
         public ViewHolder(View view) {
-            tv = (TextView) view.findViewById(R.id.tv);
-            posTv = (TextView) view.findViewById(R.id.posTv);
+            title = (TextView) view.findViewById(R.id.title);
+            text = (TextView) view.findViewById(R.id.text);
         }
     }
 

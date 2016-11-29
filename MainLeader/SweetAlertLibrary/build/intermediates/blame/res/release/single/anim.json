@@ -1,11 +1,35 @@
 [
     {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\error_frame_in.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\error_frame_in.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\modal_out.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\modal_out.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\error_frame_in.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\error_frame_in.xml"
+    },
+    {
+        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\success_bow_roate.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\success_bow_roate.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\error_x_in.xml",
+        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\error_x_in.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
@@ -16,6 +40,14 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\success_bow_roate.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\success_bow_roate.xml"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\success_mask_layout.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\success_mask_layout.xml"
     },
@@ -24,8 +56,16 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\error_x_in.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\error_x_in.xml"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
@@ -36,15 +76,23 @@
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\modal_in.xml"
     },
     {
-        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\success_bow_roate.xml",
-        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\success_bow_roate.xml"
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\modal_out.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\modal_out.xml"
     },
     {
-        "merged": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\error_x_in.xml",
-        "source": "F:\\Android\\RestResp\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\error_x_in.xml"
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\modal_in.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\modal_in.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\build\\intermediates\\res\\merged\\release\\anim\\success_mask_layout.xml",
+        "source": "F:\\KuLv\\MainLeader\\SweetAlertLibrary\\src\\main\\res\\anim\\success_mask_layout.xml"
     }
 ]

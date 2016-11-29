@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:padding="5dp">
-        <com.example.customview.CircleTextImageView
+        <com.example.view.customview.CircleTextImageView
             android:id="@+id/comment_photo"
             android:layout_width="40dp"
             android:layout_height="40dp"

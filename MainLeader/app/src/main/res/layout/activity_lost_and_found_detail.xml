@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white">
 
-                <com.example.customview.CircleTextImageView
+                <com.example.view.customview.CircleTextImageView
                     android:id="@+id/img_photo"
                     android:layout_width="50dp"
                     android:layout_height="50dp"

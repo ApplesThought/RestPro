@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:background="@drawable/side_nav_bar_friend">
 
-        <com.example.customview.CircleTextImageView
+        <com.example.view.customview.CircleTextImageView
             android:id="@+id/img_photo"
             android:layout_width="100dp"
             android:layout_height="100dp"

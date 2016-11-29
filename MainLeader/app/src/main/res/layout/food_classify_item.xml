@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="10dp">
 
-    <com.example.customview.CircleTextImageView
+    <com.example.view.customview.CircleTextImageView
         android:id="@+id/foodImg"
         android:layout_width="50dp"
         android:layout_height="50dp"

@@ -20,7 +20,7 @@
         android:textSize="25sp"
         android:textColor="@color/white"/>
 
-    <com.example.customview.CircleTextImageView
+    <com.example.view.customview.CircleTextImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
         android:layout_width="150dp"

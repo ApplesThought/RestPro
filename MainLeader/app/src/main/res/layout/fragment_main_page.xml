@@ -7,7 +7,7 @@
 
 
 
-        <com.example.customview.MyScrollView
+        <com.example.view.customview.MyScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never">
@@ -326,5 +326,5 @@
                     android:textColor="@color/white"
                     android:textSize="20sp" />
             </LinearLayout>
-        </com.example.customview.MyScrollView>
+        </com.example.view.customview.MyScrollView>
 </RelativeLayout>

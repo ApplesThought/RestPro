@@ -1,10 +1,18 @@
 [
     {
+        "merged": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
         "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_top.xml"
     },
     {
         "merged": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
         "source": "F:\\Android\\RestResp\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "F:\\KuLv\\MainLeader\\PullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
     }
 ]

@@ -3,6 +3,7 @@ package com.example.view.fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +36,7 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
     private PullToRefreshListView lv;
     private HomeQuTuAdapter adapter;
     private List<QuTuInfo> list = new ArrayList<>();
-    private int page = 2;
+    private String page = "2";
     private ListView listView;
     private int PULL_DOWN_FLAG = 0;
 
@@ -67,7 +68,7 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
     private void getData() {
         String quTuJson = SPManager.getInstance().getString(getActivity(), SPManager.KEY_HOME_QUTU);
         if (TextUtils.isEmpty(quTuJson)) {
-            getDataFromNet(1);
+            getDataFromNet("1");
         } else {
             getDataFromSDCard(quTuJson);
         }
@@ -75,12 +76,10 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
     }
 
 
-    private void getDataFromNet(int p) {
+    private void getDataFromNet(String p) {
         Map<String, Object> params = new HashMap<>();
         params.put("page", p);
-        params.put("pagesize", 20);
-        params.put("key", AppUrl.quTuAppKey);
-        RequestManager.getRequestManager().dealDataByGet(getActivity(), AppUrl.quTuBaseUrl, params, new RequestListener() {
+        RequestManager.getRequestManager().dealDataByGetWithToken(getActivity(), AppUrl.quTuBaseUrl, params, new RequestListener() {
             @Override
             public void dealDataSuccess(JSONObject jsonObject) {
                 if (lv.isRefreshing()) {
@@ -92,8 +91,8 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
                 }
                 String JsonStr = jsonObject.toString();
                 parseJsonData(JsonStr);
-                if (page == 2) {
-                    listView.setAdapter(adapter);
+                if (page.equals("2")) {
+//                    listView.setAdapter(adapter);
                     SPManager.getInstance().saveString(getActivity(), SPManager.KEY_HOME_QUTU, JsonStr);
                 }
             }
@@ -115,14 +114,14 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
     private void parseJsonData(String jsonStr) {
         try {
             JSONObject object = new JSONObject(jsonStr);
-            JSONObject resultObj = object.optJSONObject("result");
-            JSONArray array = resultObj.optJSONArray("data");
+            JSONObject resultObj = object.optJSONObject("showapi_res_body");
+            JSONArray array = resultObj.optJSONArray("contentlist");
             for (int i = 0; i < array.length(); i++) {
                 QuTuInfo info = new QuTuInfo();
                 JSONObject obj = array.optJSONObject(i);
-                info.setContent(obj.optString("content"));
-                info.setUpdatetime(obj.optString("updatetime"));
-                info.setUrl(obj.optString("url"));
+                info.setTitle(obj.optString("title"));
+                info.setCt(obj.optString("ct"));
+                info.setImg(obj.optString("img"));
                 list.add(info);
             }
 
@@ -144,7 +143,7 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
                         .progressBarHeight(5)
                         .progressBarColor(getResources().getColor(android.R.color.holo_red_light))
                         .swipeRefreshColors(getResources().getIntArray(R.array.swipe_colors))
-                        .show(list.get(i - 1).getUrl());
+                        .show(list.get(i - 1).getImg());
             }
         });
     }
@@ -152,12 +151,15 @@ public class HomeQuTuFragment extends Fragment implements PullToRefreshBase.OnRe
     @Override
     public void onPullDownToRefresh(PullToRefreshBase refreshView) {
         PULL_DOWN_FLAG = 10;
-        getDataFromNet(1);
+        getDataFromNet("1");
     }
 
     @Override
     public void onPullUpToRefresh(PullToRefreshBase refreshView) {
         getDataFromNet(page);
-        page++;
+        int p = Integer.valueOf(page);
+        int pa = p++;
+        page = String.valueOf(pa);
+        Log.d("Page", page + "/" + p + "/" + pa);
     }
 }
